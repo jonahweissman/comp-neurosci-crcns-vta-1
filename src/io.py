@@ -19,7 +19,7 @@ def _load_data(column):
                  }
             d.update(fileinfo)
             spikes.append(d) 
-    if len(spikes) == 0
+    if len(spikes) == 0:
         raise ValueError("Missing data. See data/README.md file on instructions for downloading the data")
         
     spiket = pd.DataFrame(spikes)        
@@ -27,7 +27,7 @@ def _load_data(column):
     return spiket
 
 def load_spikes():
-    return _load_data("spiketimes"):
+    return _load_data("spiketimes")
     
 
         
