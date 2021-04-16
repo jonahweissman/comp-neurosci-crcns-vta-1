@@ -27,11 +27,13 @@ def _load_data(column):
     return spiket
 
 def load_spikes():
+    """ return spike_train derived from crcns vta-1 dataset"""
     return _load_data("spiketimes")
     
 
         
 def load_odor():
+    """ return odor onsets derived from crcns vta-1 dataset"""
     return _load_data("odor_onsets")
     
 
