@@ -5,3 +5,4 @@ matplotlib
 seaborn
 notebook
 parse
+statsmodels

@@ -29,7 +29,7 @@ def _load_data(columns):
                          " on instructions for downloading the data")
     # combine DataFrame for each file into a single DataFrame
     times_df = times[0].append(times[1:] if len(times) > 1 else [])
-    return times_df
+    return times_df.sort_index()
 
 def load_spikes():
     """ returns spike times from vta-1 dataset
