@@ -5,4 +5,4 @@ matplotlib
 seaborn
 notebook
 parse
-statsmodels
+scikit-learn
