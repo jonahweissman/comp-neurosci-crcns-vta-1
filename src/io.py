@@ -12,7 +12,7 @@ def _load_data(columns):
     times = []
     for file in glob.glob(path.join("data","vta1","data","*")):
         fileinfo = parse.parse(
-            path.join("data","vta1", "data","{treatment}_{task}_{trial}.mat"),
+            path.join("data","vta1", "data","{treatment}_{task}_{session}.mat"),
             file,
         ).named
         mat = loadmat(file)
@@ -20,7 +20,7 @@ def _load_data(columns):
         df = pd.DataFrame(event_categories)
         for key, value in fileinfo.items():
             df[key] = value
-        df = df.set_index(["treatment", "task", "trial"])
+        df = df.set_index(["treatment", "task", "session"])
         
         times.append(df)
 
