@@ -22,7 +22,7 @@ Using the code in this repository, we created a peri-stimulus time histograms an
 
 ## Setting up
 
-Follow instructions at [data/README.md] to download dataset.
+Follow instructions at [data/README.md](./data/README.md) to download dataset.
 
 
 Create a virtual environment and install the dependencies as follows:
@@ -33,4 +33,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Install the project in development mode by running `pip install -e .`. If you use notebooks, this will ensure that you can access your modules.
+Install the project in development mode by running `pip install -e .`.
+
+Start a Jupyter Notebook server by running `jupyter notebook` and following the instructions that it outputs. Navigate to `Plots.ipynb` and run the cells to recreate the graphs. A wrapper class for the dataset can be found in the `src/` directory.
